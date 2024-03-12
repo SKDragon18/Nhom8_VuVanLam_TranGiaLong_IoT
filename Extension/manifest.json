@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "URLS DETECION",
+  "description": "Kiểm tra url có chứa mã độc",
+  "version": "1.0",
+  "permissions": [
+    "webNavigation",
+    "webRequest",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "scripts/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "hello.html"
+  }
+}

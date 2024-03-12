@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Định dạng cho popup */
+        body {
+            width: 300px;
+            height: 200px;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+        }
+
+        #back {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Thông báo</h1>
+    <p>Trang web của bạn có rủi ro:  <span id="url"></span></p>
+    <p>Bạn có muốn tiếp tục không?</p>
+    <button id="continue">Tiếp tục</button>
+    <button id="back">Trở lại</button>
+    <script src="popup.js"></script>
+</body>
+
+</html>
